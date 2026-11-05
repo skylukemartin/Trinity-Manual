@@ -60,12 +60,12 @@ This section will demonstrate how custom .Net assembly tooling can be written to
 
 Open Visual Studio select **Create a new project -> Console App (.Net Framework)** 
 
-![[Pasted image 20261103152203.png]]
+![[vs_boxed.png]]
 
 Next configure the project by providing a name and select an appropriate .Net Framework version (either 4.7.2 or 4.8) then click **Create**. 
 
-![[Pasted image 20261103152729.png]]
+![[fw_boxed.png]]
 
 The logic and implementation specific details are subject to the discretion of the operator and what they would like to achieve with the tooling. The only requirement is that the output be written to the standard output stream. This can be achieved by simply calling `Console.WriteLine` as seen in the example below: 
 
-![[Pasted image 20261103153835.png]]
+![[code_boxed.png]]
