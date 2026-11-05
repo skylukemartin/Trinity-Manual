@@ -48,3 +48,6 @@ To start your own report:
 2. Replace the notes in `docs/` with your own sections and embed them in `main.md`.
 3. Add your sources to `citations/references.bib` through Zotero.
 4. Run `./toolbox.sh watch` and write.
+[[Commands]]
+[[Listener and Redirector Management]]
+[[Inline .Net Assembly Execution]]
