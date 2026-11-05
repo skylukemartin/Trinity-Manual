@@ -6,13 +6,13 @@ Once the Team Server is up and running, an important consideration and measure f
 
 To manage Trinity C2 listeners, select the **Listeners** toolbar icon. This will open a tab listing all of your configured listeners. 
 
-![[Pasted image 20261103124454.png]]
+![[listenerToolbarIcon.png]]
 
 The management options for each configured listener will present a dialogue and are as follows: 
-- Add - create an additional listener configuration.
-- Edit - modify an existing listener configuration.
-- Restart - stop and resume polling on a HTTP listener configuration's bind port. 
-- Remove - terminate an existing listener configuration. 
+- **Add** - create an additional listener configuration.
+- **Edit** - modify an existing listener configuration.
+- **Restart** - stop and resume polling on a HTTP listener configuration's bind port. 
+- **Remove** - terminate/delete an existing listener configuration. 
 
 It should be noted that `restart` only applies to listener configurations that issue a polling directive on the Team Server, such as the HTTP listener.  
 
@@ -36,13 +36,9 @@ Select **HTTP** or **HTTPS** as the type and give the listener a **Name**. Make 
 - **Max Retry Stategy** - This configures the Agent behavior for exiting after a number of consecutive failed checkin attempts to the Team Server.
 	- **Default** - Agent will not exit because of failed connection attempts.
 - **C2 Port** - This field sets the port your HTTP(S) Agent will checkin to.
-- **Bind Port** - This field specifies the port which should be listener upon for Agent checkin requests. 
+- **Bind Port**  (HTTP only) - This field specifies the port which should be listener upon for Agent checkin requests. 
 - **HTTP(S) Host Header** - The headers that should be used. If nothing is provided then the listener configuration will use `Content-type: */*` or else the agent wont be able to checkin.
 - **User Agent** - The user agent that should be used by the Agent for checkin requests. 
-
-## TOR Listener Setup 
-
-TODO 
 
 ## Redirector Setup 
 
@@ -87,7 +83,7 @@ Sometimes  despite all modules appearing to be enabled there is failure to forwa
 
 Notice below that there is an Internal server error: 
 
-![[Pasted image 20261103133332.png]]
+![[ws_boxed.png]]
 
 Inspect the logs under `/var/log/apache2/error.log`, in this case no protocol handler was valid for the URL. This indicates there is an issue with how the server is handling the HTTP(S) request, typically this is the cause of `mod_proxy_http` not being enabled.  To resolve this issue, run the following command below: 
 
