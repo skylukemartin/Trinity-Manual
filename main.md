@@ -29,6 +29,7 @@ Each section of this chapter is a separate note in the `docs/` folder, embedded 
 
 ![](</docs/Hiding Content and Raw Typst.md>)
 
+![[UI ST10438897]]
 ![Payload Management](</docs/Payload Management.md>)
 ![File Transfer](</docs/File Transfer.md>)
 ![FAQ](</docs/FAQ.md>)
