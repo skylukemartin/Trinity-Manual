@@ -29,6 +29,7 @@ Each section of this chapter is a separate note in the `docs/` folder, embedded 
 
 ![](</docs/Hiding Content and Raw Typst.md>)
 
+![[Payload Management]]
 # Conclusion
 
 The template turns ordinary Obsidian notes into a structured report with a title page, table of contents, numbered sections and figures, callouts, maths and a reference list, as shown in [@introduction] to [@hiding-content-and-raw-typst].
