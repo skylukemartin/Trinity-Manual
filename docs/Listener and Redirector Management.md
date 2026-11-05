@@ -16,7 +16,7 @@ The management options for each configured listener will present a dialogue and 
 
 It should be noted that `restart` only applies to listener configurations that issue a polling directive on the Team Server, such as the HTTP listener.  
 
-![[Pasted image 20261103124520.png]]
+![[tr_boxed.png]]
 
 ## HTTP(S) Listener Setup
 
